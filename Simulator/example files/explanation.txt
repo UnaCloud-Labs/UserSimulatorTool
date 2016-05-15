@@ -1,0 +1,22 @@
+Both files that are passed by arguments to Simulator.jar have the following characteristics.
+
+The first value before the ',' in a row specifies the duration of the load in seconds.
+
+The second value in the row specifies the percent of memory/cpu that must be taken by the program.
+
+The program will secuentially go through each file and execute the specified load for the specified time.
+
+-----------------------------------------------------------------
+
+There are two example files, one loads ram (ramload) and the other loads cpu (cpuload).
+
+They both contain the same number of rows (2).
+
+The total duration of the simulation for both files is 40 seconds. (The two rows specify that the load must be mantained for 20s each).
+
+The program will load the cpu to 40% for 20s.
+Simultaneously, the program will load RAM to 40% for 20s.
+
+After the first 20s are over, the program will load the CPU to 30%. Simultaneously, it will also load RAM to 50%.
+
+After the 20s are over, the program will exit.
